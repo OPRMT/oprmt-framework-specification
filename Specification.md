@@ -186,7 +186,7 @@ Future updates to this specification will be published at the official OPRMT™ 
 
 **Official Resources**
 - Website: https://oprmt.solutions  
-- Specification URL: https://oprmt.solutions/oprmt-framework
+- Specification URL: https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
 
 **Contact**
 For licensing inquiries, clarifications, or official communications regarding the OPRMT™ framework, contact the creator through official channels.
