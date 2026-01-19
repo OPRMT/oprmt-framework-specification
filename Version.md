@@ -214,7 +214,7 @@ January 2026
 Initial
 Complete framework specification release
 For Version Information and Updates:
-Canonical Source: https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+Canonical Source: https://oprmt.solutions/oprmt-framework-official-canonical-specification
 Version History: This Document
 Support: [Official Support Channels]
 OPRMT™ © Michael Willis Fleming. All Rights Reserved.
