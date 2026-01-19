@@ -271,6 +271,6 @@ Initial governance specification
 For Questions or Clarifications:
 Contact: [Official Support Channel]
 Website: oprmt.solutions
-Documentation: https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+Documentation: https://oprmt.solutions/oprmt-framework-official-canonical-specification
 OPRMT™ © Michael Willis Fleming. All Rights Reserved.
 This governance specification is issued under the authority of the framework creator and constitutes the official policy for OPRMT™ framework governance, version control, and modification procedures.
