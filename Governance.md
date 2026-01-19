@@ -44,7 +44,7 @@ Clearly distinguished from transfer of ownership or authority
 4. Canonical Source Designation
 4.1 Official Repository
 The sole authoritative specification of the OPRMT™ framework is maintained at:
-https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+https://oprmt.solutions/oprmt-framework-official-canonical-specification
 This location serves as the definitive reference for:
 Current framework specification
 Official component definitions
