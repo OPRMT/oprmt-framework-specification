@@ -98,7 +98,7 @@ Improving table readability
 Publication Protocol
 Primary Publication
 All official version releases must be published first to the canonical source:
-https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+https://oprmt.solutions/oprmt-framework-official-canonical-specification
 This canonical source serves as:
 The authoritative reference for the current version
 The official archive for all historical versions
@@ -108,7 +108,7 @@ Publication Sequence
 Official version releases follow this mandatory sequence:
 Internal Review: Creator validation of all changes
 Version Assignment: Determination of appropriate version number
-Canonical Publication: Update to the official specification URL
+Canonical Publication: Update to the official specification URL https://oprmt.solutions/oprmt-framework-official-canonical-specification
 Version Documentation: Update to this version history document
 Public Notification: Announcement through official channels
 Mirror Synchronization: Authorization for secondary distributions to update
@@ -166,7 +166,7 @@ Historical Version Archive
 Version 1.0 (Current)
 Release Date: January 2026
 Status: Current Stable Release
-Canonical URL: https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+Canonical URL: https://oprmt.solutions/oprmt-framework-official-canonical-specification
 Key Features:
 Initial five-component framework specification
 Complete component definitions (O-P-R-M-T)
@@ -187,7 +187,7 @@ Note: This roadmap is informational only and does not constitute commitment. All
 Version Verification
 Authenticity Validation
 To verify the authenticity and version of OPRMT™ documentation:
-Check Canonical Source: Confirm against https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+Check Canonical Source: Confirm against https://oprmt.solutions/oprmt-framework-official-canonical-specification
 Verify Version Number: Cross-reference with this version history
 Confirm Attribution: Ensure creator attribution is present and unmodified
 Validate Date: Check release date consistency
