@@ -24,7 +24,7 @@ Usage rules and implementation standards
 Governance and version control procedures
 Canonical Reference
 The authoritative specification for Version 1.0 is permanently archived and accessible at:
-https://oprmt.solutions/OPRMT%E2%84%A2%20Framework%20%E2%80%94%20Official%20Canonical%20Specification
+https://oprmt.solutions/oprmt-framework-official-canonical-specification
 All implementations, distributions, mirrors, and derivative references must cite this URL as the definitive source for framework specifications.
 Distribution Requirements
 Secondary distributions of this specification must:
