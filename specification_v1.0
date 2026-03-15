@@ -1,0 +1,316 @@
+# OPRMT™ Framework Specification
+## Component Specification: OBJECTIVE
+
+---
+
+| Field | Value |
+|---|---|
+| **Document ID** | OBJ-OPRMT-SPEC-001 |
+| **Version** | 1.0 |
+| **Framework** | OPRMT™ — Objective · Parameters · Results · Method · Tools |
+| **Author** | Michael Willis Fleming |
+| **Classification** | Prompt Engineering Standard |
+| **Field** | Prompt Compliance Engineering (PCE) |
+| **Status** | Active |
+| **Created** | 2026-03-15 |
+| **Last Updated** | 2026-03-15 |
+| **License** | Proprietary — © 2026 Michael W. Fleming. All rights reserved. |
+
+---
+
+## Table of Contents
+
+1. [Purpose](#1-purpose)
+2. [Definition](#2-definition)
+3. [Structural Requirements](#3-structural-requirements)
+4. [Objective Syntax Model](#4-objective-syntax-model)
+5. [Compliance Rules](#5-compliance-rules)
+6. [Quality Criteria](#6-quality-criteria)
+7. [Objective Scoring — DOAS Integration](#7-objective-scoring--doas-integration)
+8. [Validated Examples](#8-validated-examples)
+9. [Validation Checklist](#9-validation-checklist)
+10. [Implementation Guidance](#10-implementation-guidance)
+11. [Compliance Identifier](#11-compliance-identifier)
+12. [Summary](#12-summary)
+
+---
+
+## 1. Purpose
+
+The **Objective** defines the primary intent of a prompt within the OPRMT™ Framework. It establishes the core directive that the AI system must achieve, serving as the foundational anchor for all subsequent components: Parameters, Results, Method, and Tools.
+
+A properly defined Objective ensures:
+
+- Clarity of intent across all downstream components
+- Precise task alignment between operator instruction and AI execution
+- Predictable and reproducible output generation
+- Measurable prompt success within the DOAS™ scoring system
+
+> **Architectural Note:** Without a clearly defined Objective, prompts become ambiguous, inefficient, and non-deterministic. The Objective is the sole element that governs the entire prompt execution chain.
+
+---
+
+## 2. Definition
+
+### Objective (OBJ)
+
+A structured statement that defines the exact task, goal, or action the AI must perform.
+
+The Objective must clearly answer the operational question:
+
+```
+"What must the AI accomplish?"
+```
+
+It is the **primary operational directive** within a prompt. The Objective component carries the designation `OBJ-OPRMT` within all compliance and version control documentation.
+
+---
+
+## 3. Structural Requirements
+
+A valid Objective must contain the following three structural elements. Omission of any element constitutes a structural compliance failure.
+
+### 3.1 Action Directive
+
+The Objective must specify a clear verb-based instruction. The action verb establishes the operational mode for AI execution.
+
+**Approved action verbs include:**
+
+| | | | | |
+|---|---|---|---|---|
+| Create | Analyze | Generate | Explain | Design |
+| Evaluate | Summarize | Translate | Produce | Develop |
+
+**Example:**
+```
+Create a structured certification curriculum for prompt engineering.
+```
+
+---
+
+### 3.2 Target Subject
+
+The Objective must identify the specific subject or entity being acted upon. The Target Subject answers the question: *acted upon what?*
+
+**Example:**
+```
+Create a structured certification curriculum for prompt engineering.
+```
+```
+Target Subject = certification curriculum
+```
+
+---
+
+### 3.3 Scope Definition
+
+The Objective must define the operational scope or context of the task. The Scope qualifier prevents overreach and constrains output dimensions.
+
+**Example:**
+```
+Create a structured 10-module certification curriculum for prompt engineering professionals.
+```
+```
+Scope          = 10-module curriculum
+Audience       = professionals
+```
+
+---
+
+## 4. Objective Syntax Model
+
+The OPRMT™ Framework prescribes the following canonical syntax model for Objective construction:
+
+```
+[Action Verb]  +  [Target Subject]  +  [Scope or Context]
+```
+
+**Applied example:**
+```
+Design a professional prompt engineering certification course using the OPRMT™ framework.
+```
+
+This syntax model ensures structural consistency across all library assets and compliance scoring evaluations.
+
+---
+
+## 5. Compliance Rules
+
+To meet OPRMT™ Objective Compliance, all three rules below must be satisfied. Violation of any single rule results in a **non-compliant** classification.
+
+---
+
+### Rule 1 — Single Core Task
+
+The Objective must represent **one primary directive**. Compound objectives that span multiple unrelated tasks are non-compliant.
+
+| Status | Example |
+|---|---|
+| ✅ Compliant | `Create a structured prompt library for business automation.` |
+| ❌ Non-Compliant | `Create a prompt library and also design a website and write a book.` |
+
+---
+
+### Rule 2 — Explicit Intent
+
+Objectives must avoid vague or hedged language. The directive must convey deterministic intent without requiring interpretation.
+
+| Avoid | Use Instead |
+|---|---|
+| `"help with"` | `create` / `produce` |
+| `"do something about"` | `analyze` / `evaluate` |
+| `"make better"` | `optimize` / `restructure` |
+
+---
+
+### Rule 3 — Task-Oriented Output
+
+The Objective must require an actionable, producible output. Informational inquiries without production directives are non-compliant.
+
+| Status | Example |
+|---|---|
+| ✅ Compliant | `Explain prompt engineering principles for beginner AI users.` |
+| ❌ Non-Compliant | `Tell me about prompt engineering.` |
+
+---
+
+## 6. Quality Criteria
+
+A high-quality Objective must satisfy all four quality attributes. These attributes are evaluated independently within the DOAS™ scoring system.
+
+| Attribute | Description | Standard |
+|---|---|---|
+| **Clarity** | Clearly understandable task directive | Unambiguous verb + subject |
+| **Specificity** | Defines both subject and operational scope | Scope qualifier present |
+| **Actionability** | Requires a measurable, producible output | Output implied or stated |
+| **Determinism** | Minimizes interpretation ambiguity | Single directive only |
+
+---
+
+## 7. Objective Scoring — DOAS Integration
+
+Within the **DOAS™ Prompt Quality Scoring System**, the Objective component is evaluated on a **0–20 point scale**. This score contributes directly to the overall Deterministic Compliance Index (DCI™) calculation.
+
+| Score Range | Classification | Description |
+|---|---|---|
+| 0 – 5 | **Non-Compliant** | Vague or absent objective; no measurable output defined |
+| 6 – 10 | **Marginal** | Basic directive present but scope is unclear or incomplete |
+| 11 – 15 | **Compliant** | Clear directive with defined subject; minor scope gaps permitted |
+| 16 – 20 | **Fully Compliant** | Highly precise objective with explicit task, subject, and scope |
+
+> **Scoring Note:** Prompts scoring below **11** on the Objective component cannot achieve a Fully Compliant classification at the framework level, regardless of performance in other components.
+
+---
+
+## 8. Validated Examples
+
+The following examples demonstrate compliant Objective construction across three operational domains.
+
+### Example 1 — Content Creation
+
+```
+Objective:
+Write a professional blog article explaining prompt engineering best practices
+for enterprise AI operators.
+```
+
+### Example 2 — Business Automation
+
+```
+Objective:
+Generate a reusable prompt template for automating customer support responses
+across e-commerce platforms.
+```
+
+### Example 3 — Education & Certification
+
+```
+Objective:
+Design a 10-module certification course teaching the OPRMT™ prompt engineering
+framework to intermediate AI practitioners.
+```
+
+---
+
+## 9. Validation Checklist
+
+Before a prompt is classified as compliant, the following validation checklist must be confirmed in full. A single unchecked item constitutes a compliance gap.
+
+- [ ] Contains an explicit action verb
+- [ ] Identifies the target subject of the task
+- [ ] Defines the operational scope or context
+- [ ] Represents a single, primary directive
+- [ ] Produces a clearly measurable output
+
+---
+
+## 10. Implementation Guidance
+
+When constructing prompts using the OPRMT™ Framework, the Objective must always be authored **first**. This enforces **intent-first prompt architecture**, which directly improves output reliability and reproducibility.
+
+### Recommended Prompt Construction Order
+
+```
+1.  OBJECTIVE    →  Define the primary task directive
+2.  PARAMETERS   →  Specify constraints and input variables
+3.  RESULTS      →  Define expected output format and success criteria
+4.  METHOD       →  Establish execution logic and reasoning steps
+5.  TOOLS        →  Identify frameworks, models, and systems required
+```
+
+This ordering ensures that every downstream component inherits its operational context from a precisely defined Objective, eliminating systemic ambiguity across the entire prompt architecture.
+
+---
+
+## 11. Compliance Identifier
+
+Within OPRMT™ documentation and version control systems, Objectives are referenced using the following standardized identifier format:
+
+```
+OBJ-OPRMT-{SEQUENCE_NUMBER}
+```
+
+**Example reference:**
+```
+OBJ-OPRMT-001
+```
+
+This identifier must appear in prompt metadata, GitHub commit messages, and all PCE audit records associated with the Objective component.
+
+---
+
+## 12. Summary
+
+The **Objective** is the foundational directive of the OPRMT™ prompt architecture. It defines what must be accomplished, enabling all other framework components to operate with precision, alignment, and verifiable compliance.
+
+A well-formed Objective directly improves:
+
+- AI output quality and consistency
+- Prompt reproducibility across operators and platforms
+- System-level efficiency in multi-prompt workflows
+- Prompt compliance scoring within the DOAS™ framework
+
+---
+
+## Related Specifications
+
+| Document ID | Title | Status |
+|---|---|---|
+| `PARAM-OPRMT-SPEC-001` | Component Specification: PARAMETERS | Pending |
+| `RESULTS-OPRMT-SPEC-001` | Component Specification: RESULTS | Pending |
+| `METHOD-OPRMT-SPEC-001` | Component Specification: METHOD | Pending |
+| `TOOLS-OPRMT-SPEC-001` | Component Specification: TOOLS | Pending |
+| `PCE-SPEC-001` | Prompt Compliance Engineering Standard | Active |
+| `DCS-v2.0` | Deterministic Compliance Standard | Active |
+
+---
+
+```
+END OF SPECIFICATION
+Document ID  :  OBJ-OPRMT-SPEC-001
+Version      :  1.0
+Repository   :  GitHub (Canonical Source)
+License      :  Proprietary — OPRMT™ Prompt Engineering Systems
+© 2026 Michael W. Fleming. All rights reserved.
+Support      :  engineering@oprmt.solutions
+```
